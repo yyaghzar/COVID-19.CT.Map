@@ -1,0 +1,19 @@
+﻿@inherits LegendBase
+
+@if (Colors != null)
+{
+<div class="legend">
+    <ul class="legend_label">
+        <li style="text-align:left"><strong>@Min</strong></li>
+        <li style="text-align:right"><strong>@Max</strong></li>
+    </ul>
+    <ul class="legend_color">
+        @foreach (var color in Colors)
+        {
+            <li style="background-color:@color"></li>
+        }
+
+        
+    </ul>
+</div>
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>COVID_19.Map</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview2.20160.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COVID-19.Components\COVID-19.Components.csproj" />
+    <ProjectReference Include="..\COVID-19.Shared\COVID-19.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

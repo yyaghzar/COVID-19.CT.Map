@@ -1,0 +1,27 @@
+﻿@inherits COVIDTableBase
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th scope="col">County</th>
+                    <th scope="col">Positive Cases</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in DataByCounty)
+                {
+                    <tr>
+                        <td>@item.County</td>
+                        <td>@item.TotalCases</td>
+                    </tr>
+                }
+                <tr>
+                    <th>Total</th>
+                    <th>@DataByCounty.Sum(item => item.TotalCases)</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>

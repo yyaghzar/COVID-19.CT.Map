@@ -1,0 +1,20 @@
+﻿
+@page "/covid-19"
+@inherits COVIDBase
+@if (COVIDData != null)
+{
+    <h1>Coronavirus Disease 2019 (COVID-19)</h1>
+    <h3>@COVIDData.DateUpdated</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <Map DataByCounty="COVIDData.DataByCounty"></Map>
+                <Legend Min="Min" Max="Max" Colors="Colors"></Legend>
+            </div>
+            <div class="col">
+                <COVIDTable DataByCounty="COVIDData.DataByCounty"></COVIDTable>
+            </div>
+        </div>
+        </div>
+        }
+

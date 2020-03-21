@@ -1,0 +1,43 @@
+﻿/*
+    This file is to show how CSS and other static resources (such as images) can be
+    used from a library project/package.
+*/
+
+
+
+
+.legend {
+    color: black;
+    width: 700px;
+    font-family: arial;
+    font-size: 14px;
+}
+
+.legend_color {
+    display: table;
+    width: 100%;
+    background: white;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .legend_color li {
+        height: 20px;
+        display: table-cell;
+    }
+
+.legend_label {
+    display: table;
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    .legend_label li {
+        height: 20px;
+        display: table-cell;
+        text-align: center;
+    }
